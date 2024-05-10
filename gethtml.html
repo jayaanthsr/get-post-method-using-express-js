@@ -1,0 +1,143 @@
+<html>
+<head>
+    <script src="formJS.js"></script>
+    <style>
+        
+.error {
+    color: red;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: gray !important;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(16, 2, 86, 0.3);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: bold;
+  text-align: left;
+}
+
+
+.input-group input {
+  width: 285px;
+  padding: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border: 1px solid #000329;
+  border-radius: 5px;
+}
+
+#lab {
+  display: block;
+  font-weight: bold;
+  right: 127px;
+}
+.btn {
+  background-color: #002791 !important;
+  color: #fff !important;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: #6f0707;
+}
+.btn.hover{
+  background-color: #000329;
+  transition: 3ms;
+}
+label{
+    color: #00065d;
+}
+
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>    
+<body style="background-image: url(bg.jpg);">  
+    <div class="container">
+    <form action="http://localhost:8000/login" method="get">
+        <div class="input-group">
+            <label for="name" class="col-4">Name:</label>
+        <div >
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+        </div>
+        </div>
+
+        <div class="input-group">
+            <label for="age" class="col-4">Age:</label>
+        <div >    
+            <input type="number" id="age" name="age" placeholder="Enter your age" minlength="18" maxlength="21">
+            
+        </div>     
+        </div>
+    
+       <div class="row">
+            <label id="lab" class="col-4">Gender:</label>
+        <div >    
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+            
+        </div>     
+        </div>  
+    
+        <div class="input-group">
+            <label class="col-4" for="phone">Phone Number:</label>
+        <div >    
+            <input type="text" id="phone" name="phone" placeholder="Enter your phone number">
+            
+        </div>     
+        </div>
+       
+
+        <div class="input-group">
+            <label for="email" class="col-4">Email:</label>
+        <div >    
+            <input type="email"  id="email" name="email" placeholder="Enter your email">
+            
+        </div>    
+        </div>
+    
+        <div class="input-group">
+            <label for="password" class="col-4">Password:</label>
+        <div >    
+            <input type="password" id="password" placeholder="Enter your password">
+            
+        </div>     
+        </div>     
+    
+        <div class="input-group">
+            <label for="confirmPassword" class="col-4">Confirm Password:</label>
+        <div >    
+            <input type="password" id="confirmPassword" placeholder="Confirm your password">
+            
+        </div>     
+        </div> 
+
+        <input class="btn" type="submit" value="Submit" >
+        
+    </form>
+    
+    
